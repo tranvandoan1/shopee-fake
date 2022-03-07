@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.detail-comment {
+    padding: 20px;
+}
+
+.list-detail-comment>table {
+    border: 1px solid rgb(231, 231, 231);
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin-top: 20px;
+}
+
+.list-detail-comment>table tr,
+.list-detail-comment>table tr>th,
+.list-detail-comment>table tr>td {
+    border-collapse: collapse;
+    border: 1px solid rgb(231, 231, 231);
+    padding: 1rem 0.5rem;
+}
+
+.list-detail-comment>table tr>td>i {
+    cursor: pointer;
+}
+
+.back {
+    margin-top: 20px;
+}

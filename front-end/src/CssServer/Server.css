@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.admin {
+    width: 100%;
+    display: flex;
+}
+
+.admin-navbar {
+    width: 20%;
+    background-color: black;
+    transition: .5s ease-in;
+    padding: 20px;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.admin-list {
+    width: 80%;
+    transition: .5s ease-in;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.navbar {
+    transition: 1s ease-in;
+    color: #fff;
+}
+
+.info-admin {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 230, 230, .4);
+    padding: 30px 0;
+}
+
+.info-admin-img {
+    position: relative;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.info-admin-img>img {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+
+.info>h3 {
+    margin: 10px 0;
+}
+
+.info>em {
+    font-size: .8rem;
+}
+
+.navbar>.navbar-title {
+    margin-top: 20px;
+}
+
+.navbar-title>ul>li {
+    list-style: none;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.navbar-title>ul>li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-title>ul>li>a>i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.navbar-title>ul>li:nth-child(1)>a>i {
+    color: red;
+}
+
+.navbar-title>ul>li:nth-child(2)>a>i {
+    color: chartreuse;
+}
+
+.navbar-title>ul>li:nth-child(3)>a>i {
+    color: rgb(238, 77, 45);
+}
+
+.navbar-title>ul>li:nth-child(4)>a>i {
+    color: rgb(45, 61, 238);
+}
+
+.navbar-title>ul>li:nth-child(5)>a>i {
+    color: rgb(238, 45, 132);
+}
+
+.navbar-title>ul>li:hover {
+    background-color: #fff;
+}
+
+.navbar-title>ul>li:hover a {
+    color: black;
+}
+
+#on-navbar {
+    display: none;
+    transition: .3s ease-in;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    border: 0;
+    background-color: black;
+    color: #fff;
+}
+
+#off-navbar {
+    transition: .3s ease-in;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    background-color: black;
+    color: #fff;
+    border: 0;
+}
+
+#on-navbar>i,
+#off-navbar>i {
+    font-size: 1.8rem;
+}
